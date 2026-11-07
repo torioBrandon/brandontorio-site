@@ -20,6 +20,28 @@
 
 <section class="wrap">
   <article class="case">
+    <div class="case-meta">RunSybil &middot; July 2026 to present</div>
+    <h2>Product Management: RunSybil Continuous Coverage</h2>
+    <p>RunSybil makes Sybil, an AI system that tests web applications for security vulnerabilities and proves which ones are actually exploitable. Most companies test an application once or twice a year, while their engineers ship changes every day. Continuous Coverage closes that gap: Sybil watches an application for changes (in the code a team merges, on the live site, or both) and tests what changed on a schedule the customer sets.</p>
+    <p>I co-led Continuous Coverage from early concept to its public launch. For this launch, I did the following:</p>
+    <ul>
+      <li>Built a design-partner preview to test early concepts with customers: what should trigger a test, which change signals matter, and what guardrails they'd need before we locked the design</li>
+      <li>Ran MVP backlog grooming with engineering and pushed for a dedicated engineering owner for the project</li>
+      <li>Set product rules for how testing is scheduled. For example, Sybil can't check for changes less often than it tests, so a scheduled test never runs with nothing new in it</li>
+      <li>Ran functional reviews of the build before launch and turned them into prioritized UI fixes</li>
+      <li>Redesigned the Continuous tab as a clickable prototype built on one simple model: switches set what Sybil watches (code for white box, the live site for black box), and each test draft is the one place to include or skip changes</li>
+      <li>Wrote the launch blog post, captured its product screenshots, made a launch video for social, and added the feature to the customer-facing product roadmap deck</li>
+    </ul>
+    <p class="metric">Continuous Coverage launched publicly on October 29, 2026. Read the launch post I wrote: <a class="textlink" href="https://www.runsybil.com/blog/introducing-continuous-coverage-test-every-change-with-sybil" target="_blank" rel="noopener">Introducing Continuous Coverage: Test Every Change with Sybil</a></p>
+    <figure><img loading="lazy" src="images/01-continuous-tab.png" alt="Sybil's Continuous tab showing Continuous Coverage on, daily GitHub and attack surface checks, and the code and endpoint changes selected for the next test"><figcaption>The Continuous tab: Sybil checks code and the live site every day, flags what changed since the last test, ranks each change by risk, and explains why it's worth testing.</figcaption></figure>
+    <div class="gallery gallery-3">
+      <figure><img loading="lazy" src="images/02-black-box-card.png" alt="Continuous Coverage for a black box app with GitHub off, showing new endpoints Sybil found in four attack surface areas"><figcaption>Black box: with no code access, Sybil re-crawls the live app and flags new endpoints by area.</figcaption></figure>
+      <figure><img loading="lazy" src="images/03-white-box-card.png" alt="Three code change areas (Billing, Account access, Checkout), each ranked by risk with Sybil's explanation of why it's worth testing"><figcaption>White box: with code connected, Sybil groups merged changes into areas, ranks each by risk, and lists the files behind it.</figcaption></figure>
+    </div>
+    <figure><img loading="lazy" src="images/05-cycle-history.png" alt="Cycle history listing each weekly cycle, what changed, and what Sybil tested"><figcaption>Cycle history keeps a record of what changed and what Sybil tested in every cycle, even in a week with no findings.</figcaption></figure>
+  </article>
+
+  <article class="case">
     <div class="case-meta">Synack &middot; Q4 2022</div>
     <h2>API Pentesting Go-to-Market</h2>
     <p>Led go-to-market for a new product that let customers upload their API documentation and activate security researchers to test it.</p>
